@@ -1,13 +1,8 @@
-This is the Cottage Labs website.
+This is the contentmine.org website.
 
 It is a simple static website that uses getter to allow for sort-of templating by using dynamic content loading.
 
-Just put this folder on a server somehwere, install nginx, and use the provided nginx config file to have it served at 
-the domain name of your choice (obviously, assuming you also purchase that domain name and point it to your server).
-
 Codeship is used so that any commit to the master branch automatically updates the live site.
-
-All that has to go in this repo is the content that the CL site should contain. Supporting content such as images, css files, etc, can be loaded from anywhere or included in this repo.
 
 To keep things neat, it is recommended to put such static content into a folder called /static.
 
