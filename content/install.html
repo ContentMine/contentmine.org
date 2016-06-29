@@ -24,7 +24,7 @@
 <h2 id="getpapers">getpapers</h2>
 <ol>
  <li>Download Node.Js from <a href="https://nodejs.org/en/download/">here</a>.</li>
- <li>Open the windows command prompt by pressing Win-R and typing <code class="highlighter-cm-red">cmd</code></li>
+ <li>Open the windows command prompt by pressing Win-R and typing <code class="cm-code">cmd</code></li>
  <li>type npm install –global getpapers</li>
 </ol>
 
@@ -33,7 +33,7 @@
 <div class="prereq">
 
  <p>Check you have a recent version of java (at least 1.7).
-You can test this by running <code class="highlighter-cm-red">java -version</code> at the terminal/command prompt. Up to date versions can be found to download from Oracle or OpenJDK. Either will work for ContentMine.</p>
+You can test this by running <code class="cm-code">java -version</code> at the terminal/command prompt. Up to date versions can be found to download from Oracle or OpenJDK. Either will work for ContentMine.</p>
 
 </div>
 
@@ -44,15 +44,15 @@ You can test this by running <code class="highlighter-cm-red">java -version</cod
 
  <p>If you don’t have chocolatey installed you should do so with:</p>
 
- <p><code class="highlighter-cm-red">@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" &amp;&amp; SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin</code></p>
+ <p><code><pre>@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" &amp;&amp; SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin</code></pre></p>
 
 </div>
 
-<p><code class="highlighter-cm-red">choco install norma -s  https://www.myget.org/F/contentmine/api/v2 -y</code></p>
+<p><code class="cm-code">choco install norma -s  https://www.myget.org/F/contentmine/api/v2 -y</code></p>
 
 <p>To update to a new version run:</p>
 
-<p><code class="highlighter-cm-red">choco upgrade norma -s  https://www.myget.org/F/contentmine/api/v2 -y</code></p>
+<p><code class="cm-code">choco upgrade norma -s  https://www.myget.org/F/contentmine/api/v2 -y</code></p>
 
 <h3 id="alternate-method-from-zip">Alternate method from zip</h3>
 
@@ -66,7 +66,7 @@ You can test this by running <code class="highlighter-cm-red">java -version</cod
 <div class="prereq">
 
  <p>Check you have a recent version of java (at least 1.7).
-You can test this by running <code class="highlighter-cm-red">java -version</code> at the terminal/command prompt. Up to date versions can be found to download from Oracle or OpenJDK. Either will work for ContentMine.</p>
+You can test this by running <code class="cm-code">java -version</code> at the terminal/command prompt. Up to date versions can be found to download from Oracle or OpenJDK. Either will work for ContentMine.</p>
 
 </div>
 
@@ -77,14 +77,14 @@ You can test this by running <code class="highlighter-cm-red">java -version</cod
 
  <p>If you don’t have chocolatey installed you should do so with:</p>
 
- <p><code class="highlighter-cm-red">@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" &amp;&amp; SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin</code></p>
+ <p><code><pre>@powershell -NoProfile -ExecutionPolicy Bypass -Command "iex ((new-object net.webclient).DownloadString('https://chocolatey.org/install.ps1'))" &amp;&amp; SET PATH=%PATH%;%ALLUSERSPROFILE%\chocolatey\bin</pre></code></p>
 
 </div>
 
-<p><code class="highlighter-cm-red">choco install ami -s  https://www.myget.org/F/contentmine/api/v2 -y</code></p>
+<p><code class="cm-code">choco install ami -s  https://www.myget.org/F/contentmine/api/v2 -y</code></p>
 
 <p>To update to a new version run:
-<code class="highlighter-cm-red">choco upgrade ami -s  https://www.myget.org/F/contentmine/api/v2 -y</code></p>
+<code class="cm-code">choco upgrade ami -s  https://www.myget.org/F/contentmine/api/v2 -y</code></p>
 
 <h3 id="alternate-method-from-zip-1">Alternate method from zip</h3>
 
@@ -108,11 +108,11 @@ You can test this by running <code class="highlighter-cm-red">java -version</cod
 
 <p>You might get back many thousands of results, you can cancel with Ctrl-C.</p>
 
-<p><code class="highlighter-cm-red">getpapers -q &lt;your query&gt; -o &lt;a folder to save them in&gt; -x</code></p>
+<p><code class="cm-code">getpapers -q &lt;your query&gt; -o &lt;a folder to save them in&gt; -x</code></p>
 
 <p>If you look inside the folder you’ll see there are many more folders; each of which contain a fulltext.xml file which is the contents of that paper.</p>
 
-<p>For example if you run <code class="highlighter-cm-red">getpapers -q aardvark  -o aardvark -x</code> You’ll get ca. 110 XML files.</p>
+<p>For example if you run <code class="cm-code">getpapers -q aardvark  -o aardvark -x</code> You’ll get ca. 110 XML files.</p>
 
 <h2 id="norma-1">norma</h2>
 
@@ -122,7 +122,7 @@ You can test this by running <code class="highlighter-cm-red">java -version</cod
 
 <p>To convert the papers into a form we can mine use Norma.</p>
 
-<p><code class="highlighter-cm-red">norma --project &lt;your folder of papers&gt; -i fulltext.xml -o scholarly.html --transform nlm2html</code></p>
+<p><code class="cm-code">norma --project &lt;your folder of papers&gt; -i fulltext.xml -o scholarly.html --transform nlm2html</code></p>
 
 <h2 id="ami-1">ami</h2>
 <p>Detailed instructions can be found at <a href="https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami">github</a></p>
@@ -131,13 +131,13 @@ You can test this by running <code class="highlighter-cm-red">java -version</cod
 
 <p>To run a default set of plugins simply type:</p>
 
-<p><code class="highlighter-cm-red">cmine &lt;folder name&gt;</code></p>
+<p><code class="cm-code">cmine &lt;folder name&gt;</code></p>
 
 <p>This will give you html results tables in the project folder.</p>
 
 <p>To add your own dictionaries use something of the form:</p>
 
-<p><code class="highlighter-cm-red">cmine &lt;folder name&gt; word(search)w.search:/org/xmlcml/ami2/plugins/dictionary/tropicalVirus.xml</code></p>
+<p><code class="cm-code">cmine &lt;folder name&gt; word(search)w.search:/org/xmlcml/ami2/plugins/dictionary/tropicalVirus.xml</code></p>
     </div>
   </div>
 </div>
@@ -165,16 +165,16 @@ nvm install node
 <p>To quote the NVM instructions:</p>
 
 <blockquote>
-  <p>On OSX, if you get <code class="highlighter-cm-red">nvm: command not found</code> after running the install script, your system may not have a [.bash_profile file] where the command is set up. Simple create one with touch ~/.bash_profile and run the install script again.</p>
+  <p>On OSX, if you get <code class="cm-code">nvm: command not found</code> after running the install script, your system may not have a [.bash_profile file] where the command is set up. Simple create one with touch ~/.bash_profile and run the install script again.</p>
 </blockquote>
 
 <h4 id="alternative-method-using-brew">Alternative method using brew</h4>
 <p>Download npm and node using brew. See: <a href="http://brew.sh/">brew</a>
-    <code class="highlighter-cm-red">brew install node</code></p>
+    <code class="cm-code">brew install node</code></p>
 
 <h3 id="install-getpapers">Install Getpapers</h3>
 
-<p>run <code class="highlighter-cm-red">npm install getpapers</code> either as root or with sudo enabled</p>
+<p>run <code class="cm-code">npm install getpapers</code> either as root or with sudo enabled</p>
 
 <h2 id="norma">norma</h2>
 <ol>
@@ -202,18 +202,18 @@ nvm install node
 
 <p>You might get back many thousands of results, you can cancel with Ctrl-C.</p>
 
-<p><code class="highlighter-cm-red">getpapers -q &lt;your query&gt; -o &lt;a folder to save them in&gt; -x</code></p>
+<p><code class="cm-code">getpapers -q &lt;your query&gt; -o &lt;a folder to save them in&gt; -x</code></p>
 
 <p>If you look inside the folder you’ll see there are many more folders; each of which contain a fulltext.xml file which is the contents of that paper.</p>
 
-<p>For example if you run <code class="highlighter-cm-red">getpapers -q aardvark  -o aardvark -x</code> You’ll get ca. 110 XML files.</p>
+<p>For example if you run <code class="cm-code">getpapers -q aardvark  -o aardvark -x</code> You’ll get ca. 110 XML files.</p>
 
 <h2 id="norma-1">norma</h2>
 
 <div class="prereq">
 
   <p>Check you have a recent version of java (at least 1.7).
-You can test this by running <code class="highlighter-cm-red">java -version</code> at the terminal/command prompt. Up to date versions can be found to download from Oracle or OpenJDK. Either will work for ContentMine.</p>
+You can test this by running <code class="cm-code">java -version</code> at the terminal/command prompt. Up to date versions can be found to download from Oracle or OpenJDK. Either will work for ContentMine.</p>
 
 </div>
 
@@ -231,14 +231,14 @@ brew cask install java
 
 <p>To convert the papers into a form we can mine use Norma.</p>
 
-<p><code class="highlighter-cm-red">norma --project &lt;your folder of papers&gt; -i fulltext.xml -o scholarly.html --transform nlm2html</code></p>
+<p><code class="cm-code">norma --project &lt;your folder of papers&gt; -i fulltext.xml -o scholarly.html --transform nlm2html</code></p>
 
 <h2 id="ami-1">ami</h2>
 
 <div class="prereq">
 
   <p>Check you have a recent version of java (at least 1.7).
-You can test this by running <code class="highlighter-cm-red">java -version</code> at the terminal/command prompt. Up to date versions can be found to download from Oracle or OpenJDK. Either will work for ContentMine.</p>
+You can test this by running <code class="cm-code">java -version</code> at the terminal/command prompt. Up to date versions can be found to download from Oracle or OpenJDK. Either will work for ContentMine.</p>
 
 </div>
 
@@ -256,13 +256,13 @@ brew cask install java
 
 <p>To run a default set of plugins simply type:</p>
 
-<p><code class="highlighter-cm-red">cmine &lt;folder name&gt;</code></p>
+<p><code class="cm-code">cmine &lt;folder name&gt;</code></p>
 
 <p>This will give you html results tables in the project folder.</p>
 
 <p>To add your own dictionaries use something of the form:</p>
 
-<p><code class="highlighter-cm-red">cmine &lt;folder name&gt; word(search)w.search:/org/xmlcml/ami2/plugins/dictionary/tropicalVirus.xml</code></p>
+<p><code class="cm-code">cmine &lt;folder name&gt; word(search)w.search:/org/xmlcml/ami2/plugins/dictionary/tropicalVirus.xml</code></p>
     </div>
   </div>
 </div>
@@ -277,10 +277,10 @@ brew cask install java
 <p>Download npm and node using your package manager.</p>
 
 <blockquote>
-<p>On Ubuntu and Debian npm come packaged with the <code class="highlighter-cm-red">nodejs</code> package. You must also install <code class="highlighter-cm-red">nodejs-legacy</code> to get the executable named <code class="highlighter-cm-red">node</code>.</p>
+<p>On Ubuntu and Debian npm come packaged with the <code class="cm-code">nodejs</code> package. You must also install <code class="cm-code">nodejs-legacy</code> to get the executable named <code class="cm-code">node</code>.</p>
 </blockquote>
 
-<p>run <code class="highlighter-cm-red">npm install --global getpapers</code> either as root or with sudo enabled</p>
+<p>run <code class="cm-code">npm install --global getpapers</code> either as root or with sudo enabled</p>
 
 <p>You can check it has worked by moving on to the ‘Operating Procedure’ below.</p>
 
@@ -290,7 +290,7 @@ brew cask install java
 <p>Install the .deb from <a href="https://github.com/ContentMine/norma/releases">github</a> if on Debian or Ubuntu.</p>
 
 <blockquote>
-<p>this is done by downloading to a place of your chosing and running <code class="highlighter-cm-red">dpkg -i &lt;path to .deb&gt;</code></p>
+<p>this is done by downloading to a place of your chosing and running <code class="cm-code">dpkg -i &lt;path to .deb&gt;</code></p>
 </blockquote>
 
 <h3 id="alternate-method">Alternate method</h3>
@@ -307,7 +307,7 @@ brew cask install java
 <p>Install the .deb from <a href="https://github.com/ContentMine/ami/releases">github</a> if on Debian or Ubuntu.</p>
 
 <blockquote>
-<p>this is done by downloading to a place of your chosing and running <code class="highlighter-cm-red">dpkg -i &lt;path to .deb&gt;</code></p>
+<p>this is done by downloading to a place of your chosing and running <code class="cm-code">dpkg -i &lt;path to .deb&gt;</code></p>
 </blockquote>
 
 <h3 id="alternate-method-1">Alternate method</h3>
@@ -330,21 +330,21 @@ brew cask install java
 
 <p>You might get back many thousands of results, you can cancel with Ctrl-C.</p>
 
-<p><code class="highlighter-cm-red">getpapers -q &lt;your query&gt; -o &lt;a folder to save them in&gt; -x</code></p>
+<p><code class="cm-code">getpapers -q &lt;your query&gt; -o &lt;a folder to save them in&gt; -x</code></p>
 
 <p>If you look inside the folder you’ll see there are many more folders; each of which contain a fulltext.xml file which is the contents of that paper.</p>
 
-<p>For example if you run <code class="highlighter-cm-red">getpapers -q aardvark  -o aardvark -x</code> You’ll get ca. 110 XML files.</p>
+<p>For example if you run <code class="cm-code">getpapers -q aardvark  -o aardvark -x</code> You’ll get ca. 110 XML files.</p>
 
 <h2 id="norma-1">norma</h2>
 <div class="prereq">
 
 <p>Check you have a recent version of java (at least 1.7).
-You can test this by running <code class="highlighter-cm-red">java -version</code> at the terminal/command prompt. Up to date versions can be found to download from Oracle or OpenJDK. Either will work for ContentMine.</p>
+You can test this by running <code class="cm-code">java -version</code> at the terminal/command prompt. Up to date versions can be found to download from Oracle or OpenJDK. Either will work for ContentMine.</p>
 
 </div>
 
-<p>You could either download and install packages on their website or preferably use your package manager. For example <code class="highlighter-cm-red">apt-get</code> or <code class="highlighter-cm-red">yum</code> etc..</p>
+<p>You could either download and install packages on their website or preferably use your package manager. For example <code class="cm-code">apt-get</code> or <code class="cm-code">yum</code> etc..</p>
 
 <p>If you’re only working on papers form EuropePMC downloaded with getpapers you might not need to run norma seperately. See the ami instructions below.</p>
 
@@ -352,30 +352,30 @@ You can test this by running <code class="highlighter-cm-red">java -version</cod
 
 <p>To convert the papers into a form we can mine use Norma.</p>
 
-<p><code class="highlighter-cm-red">norma --project &lt;your folder of papers&gt; -i fulltext.xml -o scholarly.html --transform nlm2html</code></p>
+<p><code class="cm-code">norma --project &lt;your folder of papers&gt; -i fulltext.xml -o scholarly.html --transform nlm2html</code></p>
 
 <h2 id="ami-1">ami</h2>
 <div class="prereq">
 
 <p>Check you have a recent version of java (at least 1.7).
-You can test this by running <code class="highlighter-cm-red">java -version</code> at the terminal/command prompt. Up to date versions can be found to download from Oracle or OpenJDK. Either will work for ContentMine.</p>
+You can test this by running <code class="cm-code">java -version</code> at the terminal/command prompt. Up to date versions can be found to download from Oracle or OpenJDK. Either will work for ContentMine.</p>
 
 </div>
 
-<p>You could either download and install packages on their website or preferably use your package manager. For example <code class="highlighter-cm-red">apt-get</code> or <code class="highlighter-cm-red">yum</code> etc..
+<p>You could either download and install packages on their website or preferably use your package manager. For example <code class="cm-code">apt-get</code> or <code class="cm-code">yum</code> etc..
 Detailed instructions can be found at <a href="https://github.com/ContentMine/workshop-resources/tree/master/software-tutorials/ami">github</a></p>
 
 <p>You can actually run ami without calling norma first if you’re just using xml papers downloaded from EuropePMC.</p>
 
 <p>To run a default set of plugins simply type:</p>
 
-<p><code class="highlighter-cm-red">cmine &lt;folder name&gt;</code></p>
+<p><code class="cm-code">cmine &lt;folder name&gt;</code></p>
 
 <p>This will give you html results tables in the project folder.</p>
 
 <p>To add your own dictionaries use something of the form:</p>
 
-<p><code class="highlighter-cm-red">cmine &lt;folder name&gt; word(search)w.search:/org/xmlcml/ami2/plugins/dictionary/tropicalVirus.xml</code></p>
+<p><code class="cm-code">cmine &lt;folder name&gt; word(search)w.search:/org/xmlcml/ami2/plugins/dictionary/tropicalVirus.xml</code></p>
     </div>
   </div>
 </div>
