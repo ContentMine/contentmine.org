@@ -1,4 +1,4 @@
-/* 
+/*
 CM colours
 black 1a1919
 brownish 95926f
@@ -25,6 +25,7 @@ body {
     margin:70px 0 0 0;
     background-color:#fcfaf9;
     padding:0;
+    word-wrap: break-word;
 }
 
 input,button,select,textarea{font-family:inherit;font-size:inherit;line-height:inherit;margin-bottom:2px;}
@@ -69,10 +70,19 @@ a:focus{outline:thin dotted;outline:5px auto -webkit-focus-ring-color;outline-of
 }
 .well-cm-red a:hover{color:#1a1919;text-decoration:underline}
 
+.highlighter-cm-red {
+  background-color:#e57937;
+  color:#1a1919;
+  white-space: -webkit-pre-wrap
+  word-break: break-all;
+  white-space: normal;
+  line-height: 1;
+}
+
 .anchor {
-    display: block; 
-    position: relative; 
-    top: -50px; 
+    display: block;
+    position: relative;
+    top: -50px;
     visibility: hidden;
 }
 
@@ -100,4 +110,3 @@ h5, h6 {
     color:#333;
     padding:13px 10px 13px 10px;
 }
-
